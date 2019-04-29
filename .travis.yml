@@ -1,12 +1,12 @@
 language: java
 
 jdk:
-- oraclejdk11
+  - oraclejdk11
 
 install:
-- ./gradlew assemble
+  - ./gradlew assemble
 
 script:
-- ./gradlew test --debug --stacktrace --info
-- ./gradlew pmdMain
-- ./gradlew pmdTest
+  - ./gradlew test --debug --stacktrace --info
+  - ./gradlew pmdMain
+  - ./gradlew pmdTest
